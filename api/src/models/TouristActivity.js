@@ -7,7 +7,7 @@ module.exports = (sequelize) => {
         },
         difficulty: {
             type: DataTypes.ENUM({
-                values: ['child', 'adult']
+                values: ['Child', 'Adult']
             })
             ,
         },
@@ -16,7 +16,7 @@ module.exports = (sequelize) => {
         },
         season: {
             type: DataTypes.ENUM({
-                values: ['spring', 'summer','fall','winter']
+                values: ['Ppring', 'Summer','Fall','Winter']
             })
         }
     })

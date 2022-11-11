@@ -1,0 +1,267 @@
+.bg-image {
+    background-image:
+        url("https://wallpaperaccess.com/full/1431600.jpg");
+    height: 100vh;
+    margin: 4px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-clients {
+    display: flex;
+    flex-direction: row;
+    max-height: 80%;
+    padding: 10px;
+}
+
+.social-media {
+    margin: 10px;
+    width: auto;
+    height: 20%;
+    background: rgba(68, 68, 68, 0.5);
+}
+
+.about-us {
+    width: 40%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.5);
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-title {
+
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.about-us-description {
+
+    max-height: 60%;
+    width: 90%;
+    text-align: center;
+    font-size: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.hr {
+    width: 100%;
+}
+
+.about-us-description p {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 1px;
+}
+
+.about-us-description-img {
+    height: 50%;
+    animation: movement 6s linear infinite;
+
+}
+
+@keyframes movement {
+    0% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+
+        transform: translateX(50px);
+    }
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.5);
+    margin-left: 10px;
+    font-size: 100px;
+    
+
+}
+
+
+
+.clients-cards {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.clients-cards a {
+    height: 100%;
+    width: 33%;
+}
+
+@media all and (max-width: 768px) {
+    .about-us-description p {
+        font-size: 1vh;
+    }
+
+}
+
+
+.card {
+    height: 100%;
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    margin: 20px;
+    background-image: url('https://i.pinimg.com/originals/76/c8/6b/76c86b0334fccced02f16b1df0e2d55e.jpg');
+    background-size: cover;
+
+}
+.card3 {
+    height: 100%;
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    margin: 20px;
+    background-image: url('https://i.pinimg.com/originals/7e/3b/b7/7e3bb74bae008f000776788a05572180.jpg');
+    background-size: cover;
+
+}
+.card2 {
+    height: 100%;
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    margin: 20px;
+    background-image: url('https://images.unsplash.com/photo-1516051662687-567d7c4e8f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80');
+    background-size: cover;
+
+}
+
+.card,.card3{
+    animation: movementC 10s linear infinite;
+}
+@keyframes movementC {
+    0% {
+        transform: translatey(15px);
+    }
+
+    50% {
+        transform: translatey(0px);
+    }
+
+    100% {
+
+        transform: translatey(15px);
+    }
+}
+
+.card2{
+    animation: movementC2 10s linear infinite;
+}
+@keyframes movementC2 {
+    0% {
+        transform: translatey(-15px);
+    }
+
+    50% {
+        transform: translatey(0px);
+    }
+
+    100% {
+
+        transform: translatey(-15px);
+    }
+}
+.inner {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    background: rgba(255, 255, 255, 0.314);
+    box-sizing: border-box;
+    
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+    
+    margin: 4px;
+}
+
+.profile-picture {
+    background-image: url("https://cdn140.picsart.com/c5919f8b-adef-45f5-acdf-8bd2e09c21be/380998721040203.jpg?type=webp&to=crop&r=256");
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 35px;
+    border: 2px solid black;
+    
+}
+.profile-picture2 {
+    background-image: url("https://1.bp.blogspot.com/-xkOa184EX9w/XVhTRa2WRQI/AAAAAAAAb1E/jPDX8jZ8mAIsqqNEDgb8lmfKbttdP1BDACLcBGAs/s1600/Profile-Picture-For-Boys%2B%252812%2529.jpg");
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 35px;
+    border: 2px solid black;
+    
+}
+.profile-picture3 {
+    background-image: url("https://i.pinimg.com/564x/31/44/7e/31447e25b7bc3429f83520350ed13c15.jpg");
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 35px;
+    border: 2px solid black;
+    
+}
+
+.profile-name{
+    font-size: 20px;
+    margin-left: 4px;
+    font-weight: bolder;
+    color: black;
+}
+
+.clients h3{
+    font-size: 60px;
+    color: white;
+    height: 15px;
+    
+}
+
+.card-description{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}

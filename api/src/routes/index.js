@@ -13,11 +13,14 @@ router.get("/countries", async (req, res) => {
             const specificCountryDB = await Country.findAll({
                 where: {
                     name: validName
-                }
+                },
+                include: TouristActivity
             })
             res.json(specificCountryDB);
         } else {
-            const allCountriesDB = await Country.findAll();
+            const allCountriesDB = await Country.findAll({
+                include: TouristActivity
+            });
             res.json(allCountriesDB);
         }
 
@@ -26,9 +29,16 @@ router.get("/countries", async (req, res) => {
     }
 })
 
-router.get("/countries/:id", (req, res) => {
+router.get("/countries/:id", async (req, res) => {
     try {
-        res.json("/c/id");
+        const {id} = req.params;
+        const specificCountryDB = await Country.findAll({
+            where: {
+                id: id
+            },
+            include: TouristActivity
+        })
+        res.json(specificCountryDB);
     } catch (error) {
         res.status(404).json(error);
     }
@@ -36,7 +46,7 @@ router.get("/countries/:id", (req, res) => {
 
 router.post("/activities", async (req, res) => {
     try {
-        
+
         const { name, difficulty, duration, season, countries } = req.body;
 
         const [activity, isNewActivity] = await TouristActivity.findOrCreate({

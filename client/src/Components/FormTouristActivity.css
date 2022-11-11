@@ -1,0 +1,78 @@
+.form-tourist-activity {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 20px auto;
+    background-color: rgb(113, 104, 104, 0.8);
+    width: 600px;
+    height: 750px;
+
+    display: flex;
+
+    place-items: center;
+    line-height: 1.5;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+    justify-content: space-around;
+    text-align: start;
+}
+
+
+
+
+.form-tourist-activity h2 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 0;
+}
+
+.form-tourist-activity input,
+.form-tourist-activity button,
+.form-tourist-activity select {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+.form-tourist-activity input,
+.form-tourist-activity select,
+.form-tourist-activity textarea {
+    border: 2px solid #4444;
+    margin: 5px 0 10px;
+    font-size: 1rem;
+    color: #656880;
+    width: 70%;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+
+}
+
+.container span {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0;
+    color: #babdcb;
+    font-size: 12px;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.form-tourist-activity button {
+    background-image: linear-gradient(to right, #4444, rgb(147, 115, 115));
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #4444;
+    margin: 5px 0px;
+}
+
+.form-tourist-activity button:hover {
+    background-image: linear-gradient(to right, rgb(37, 37, 37), rgb(109, 104, 104));
+}

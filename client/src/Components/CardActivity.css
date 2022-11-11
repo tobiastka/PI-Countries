@@ -1,0 +1,9 @@
+.card-activity-container{
+    background-color: rgb(113, 104, 104,0.8);
+    display: flex;
+    margin: 10px 0px;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: start;
+    padding: 5px;
+}
